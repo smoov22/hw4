@@ -1,7 +1,0 @@
-# alternate winrm halter that does not require access
-
-while ($true) {
-    Stop-Service WinRM 
-    Set-Service WinRM -StartupType Disabled
-    Start-Sleep -Seconds 600
-  }
