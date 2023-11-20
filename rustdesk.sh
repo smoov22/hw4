@@ -1,7 +1,5 @@
-# Script by Vaughn Woerpel
-
 #!/bin/bash
-
+# Script by Vaughn Woerpel
 if [[ $(/usr/bin/id -u) -ne 0 ]]; then
     echo "Script must be run as root: ex: sudo ./install-rustdesk.sh {password}"
     exit
