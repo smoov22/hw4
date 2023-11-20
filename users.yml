@@ -1,0 +1,71 @@
+# Kyle Mullen
+# Competition - Cyber Defense Techniques
+# November 19, 2023
+# Professor Daryl Johnson
+# Creates Users
+
+
+---
+- name: Script - Creating Competition Users
+  hosts: all
+  become: yes
+  become_user: root
+  
+  tasks:
+    - name: user creation 1
+      ansible.builtin.user:
+        name: cousin_jimmy
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 2
+      ansible.builtin.user:
+        name: cousin_larry
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 3
+      ansible.builtin.user:
+        name: cousin_agetha
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 4
+      ansible.builtin.user:
+        name: cousin_sarah
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 5
+      ansible.builtin.user:
+        name: cousin_austin
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 6
+      ansible.builtin.user:
+        name: uncle_john
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 7
+      ansible.builtin.user:
+        name: uncle_barry
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 8
+      ansible.builtin.user:
+        name: aunt_maria
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 9
+      ansible.builtin.user:
+        name: aunt_kate
+        state: present
+        password: Turk3yT1me$
+    - name: user creation 10
+      ansible.builtin.user:
+        name: jeff
+        state: present
+        password: Turk3yT1me$
+        groups: sudo
+    - name: user creation 11
+      ansible.builtin.user:
+        name: lily
+        state: present
+        password: Turk3yT1me$
+        groups: sudo
